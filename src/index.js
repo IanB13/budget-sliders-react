@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './App.css';
+import './App.css';
 //import App from './App';
 import SliderContainer from './Components/Slider/SliderContainer'
 

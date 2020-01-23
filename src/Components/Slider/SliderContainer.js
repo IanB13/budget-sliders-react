@@ -35,7 +35,7 @@ const SliderContainer =() =>{
 
 
     return (
-      <div className ="App">
+      <div className ="SliderContainer">
           <BudgetInput budget = {budget} changeBudget = {changeBudget}/>
           <AddRemoveSlider sliders = {sliders} changeSliders = {changeSliders} />
           <Sliders sliders = {sliders} changesliders = {changeSliders} totalBudget={budget} />

@@ -24,7 +24,7 @@ const totalChange = (targetObject,totalBudget,sliderArray,changesliders) =>{
   const {sliderTotal, sliderId} = targetObject
   const locked = numLocked(sliderArray);
   const totalLocked = costLocked(sliderArray)
-  console.log(costLocked(sliderArray))
+  //console.log(costLocked(sliderArray))
   const newAmount = (totalBudget-sliderTotal-totalLocked)/(sliderArray.length-1-locked)
   const newArray = sliderArray.map(slider =>{
     if(sliderId === slider.id){
@@ -60,7 +60,7 @@ const quantityChange = (targetObject,totalBudget,sliderArray,changesliders) =>{
   const sliderTotal =sliderQuantity*sliderArray[sliderId].cost ;
   const locked = numLocked(sliderArray);
   const totalLocked = costLocked(sliderArray)
-  console.log(costLocked(sliderArray))
+  //console.log(costLocked(sliderArray))
   const newAmount = (totalBudget-sliderTotal-totalLocked)/(sliderArray.length-1-locked)
   const newArray = sliderArray.map(slider =>{
     if(sliderId === slider.id){
@@ -99,7 +99,7 @@ const numLocked =(sliderArray) =>{
       return acc
     }
   },0)
-  console.log(`locked is ${locked}`)
+  //console.log(`locked is ${locked}`)
   return locked;
 }
 
@@ -111,10 +111,10 @@ const costLocked =(sliderArray,targetId) =>{
     if(cur.locked){
      return acc = +cur.total +acc;
     }
-    console.log(cur.total)
+    //console.log(cur.total)
     return acc
   },0)
-  console.log(cost)
+  //console.log(cost)
   return cost || 0
 }
 
@@ -129,7 +129,7 @@ const Slider =(props) =>{
     const handleTotalChange = (event) => {
         
         const targetObject = {sliderTotal:event.target.value , sliderId: sliderId};
-        console.log(targetObject)
+        //console.log(targetObject)
         totalChange(targetObject,totalBudget,sliderArray,changesliders);
 
       }

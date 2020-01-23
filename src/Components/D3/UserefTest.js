@@ -63,11 +63,11 @@ export const MyD3Component = (props) => {
 
 
 /* App */
-const MyApp = () => {
+const D3Chart = () => {
   return (
       <div className="my-app">
           <MyD3Component data={ [1,2,3,4,5] }/>
       </div>
   )
 }
-export default MyApp
+export default D3Chart
