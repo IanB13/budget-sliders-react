@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import AddRemoveSlider from './AddRemoveSlider'
 import BudgetInput from './BudgetInput'
 import Sliders from './Sliders'
+import D3Container from './SliderD3/UserefTest'
 // main, starts with importing dummy list
 
 const dummylist =[
@@ -36,6 +37,7 @@ const SliderContainer =() =>{
 
     return (
       <div className ="SliderContainer">
+          <D3Container />
           <BudgetInput budget = {budget} changeBudget = {changeBudget}/>
           <AddRemoveSlider sliders = {sliders} changeSliders = {changeSliders} />
           <Sliders sliders = {sliders} changesliders = {changeSliders} totalBudget={budget} />
