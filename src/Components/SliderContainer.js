@@ -37,7 +37,7 @@ const SliderContainer =() =>{
 
     return (
       <div className ="SliderContainer">
-          <D3Container />
+          <D3Container sliders ={sliders}/>
           <BudgetInput budget = {budget} changeBudget = {changeBudget}/>
           <AddRemoveSlider sliders = {sliders} changeSliders = {changeSliders} />
           <Sliders sliders = {sliders} changesliders = {changeSliders} totalBudget={budget} />
